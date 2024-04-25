@@ -103,6 +103,7 @@ int canSniffing(const int s){
 
             //NotOverLapped
             if(isOverlapped == 0){
+                //Change the font color using ANSI escape code
                 printf("\033[1;31m| %3X |\033[0m", frame.can_id);
                 printf("\033[1;36m %X\033[0m", frame.can_dlc);
                 printf(" ");
